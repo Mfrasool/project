@@ -9,7 +9,6 @@ html, body {
    width: 100%;
    margin: 0;
    padding: 0;
-   position: relative; /* Allows pseudo-element positioning */
 }
 
 .bg-overlay {
@@ -17,12 +16,12 @@ html, body {
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
+   height: 665px;
    background-image: url(https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&w=400);
    background-repeat: repeat;
 
-   /* opacity: 0.2; */
-   background-color: rgba(0, 0, 0, 0.3); /* Overlay with opacity */
+   
+   background-color: rgba(0, 0, 0, 0.8); /* Overlay with opacity */
    z-index: -1; /* Ensure the overlay is behind the content */
 }
 .bg-overlay::after {
@@ -36,18 +35,15 @@ html, body {
    opacity: 0.8;
 }
 .bg-content {
-   position: relative;
    z-index: 1;
    height: 100%;
    width: 100%;
 }
 
 .header {
-   position: fixed;
-   top: 0;
    width: 100%;
    align-items: center;
-   
+   background-color: rgb(30, 29, 29);
    display: flex;
    justify-content: space-between;
    padding: 0 30px;
@@ -80,7 +76,7 @@ html, body {
    background-color: red;
    border: 1px solid red;
    border-radius: 10%;
-   color: white;
+   color: rgb(255, 255, 255);
    font-size: large;
    padding: 10px 20px;
 }
@@ -90,7 +86,7 @@ html, body {
    flex-direction: column;
    align-items: center;
    color: white;
-   margin-top: 250px; /* Keeps the gap */
+   margin-top: 230px; 
    text-align: center;
 }
 
@@ -112,6 +108,7 @@ html, body {
 
 .form-input {
    display: flex;
+   gap: 20px;
 }
 
 #line3 {
@@ -124,7 +121,52 @@ html, body {
    font-size: 25px;
    padding: 10px 20px;
 }
-
+#email{
+   background-color: black;
+   color: rgb(255, 255, 255);
+   
+}
 #btn2 {
    background-color: rgb(255, 2, 2);
+}
+
+#hr{
+   font-size: xx-large;
+}
+._2ndpage{
+   background-color: black;
+   display: flex;
+   color: white;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: center;
+   height: 85%;
+}
+._2ndpage--1stdiv{
+   font-size: 30px;
+   flex-basis: 45%;
+}
+._3rdpage{
+   background-color: black;
+   display: flex;
+   color: white;
+   justify-content: space-around;
+   align-items: center;
+   height: 85%;
+}
+._3rdpage--1stdiv{
+   font-size: 30px;
+   flex-basis: 45%;
+}
+._3rdpage--2stdiv{
+   display: flex;
+   flex-direction: column;
+}
+
+._2ndlastpage{
+  
+   background-color: black;
+   font-weight: 5000px;
+   color: white;
+   text-align: center;
 }
